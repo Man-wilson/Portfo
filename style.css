@@ -1,0 +1,214 @@
+body {
+    display: block;
+    margin: 0;
+    font-family: montserrat;
+    color: aliceblue;
+    text-align: left;
+    background-color: black;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    /* position: absolute; */
+    height: 100vh;
+    width: 100%;
+}
+
+#hero {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(0,0,0,0.6), rgb(0,0,0,0.6)), url(./IMAGES/blackmg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+nav { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: rgba(0, 0, 0, 0.192);
+}
+
+.logo {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.nav-links {
+    padding-left: 30%;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: #ea1538;
+    transition: .3s;
+}
+
+button {
+    border: none;
+    background: #ea1538;
+    padding: 12px 30px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .4s;
+}
+
+button:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.hero-section {
+    margin: 0px 140px;
+    padding-top: 150px;
+    width: auto;
+}
+
+span {
+    color: #ea1538;
+}
+
+.icons {
+    display: flex;
+    padding-top: 20px;
+}
+
+.icon {
+    color: rgb(144, 154, 163);
+    background-color: rgb(31, 31, 37);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    padding-top: 20px;
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.parag {
+    font-size: 24px;
+    padding-top: 40px;
+    color: rgb(144, 154, 163);
+}
+
+.second-head {
+    padding-top: 120px;
+    color: rgb(144, 154, 163);
+}
+
+#second {
+    margin: 0 0px;
+    padding: 20px, 30px;
+    width: auto;
+    background-color: rgb(31, 31, 32);
+}
+
+.about {
+    padding: 120px;
+    display: flex;
+}
+
+.image-about {
+    border: 25px solid rgb(36, 36, 35);
+    border-radius: 10px;
+    height: 70vh;
+    width: 50%;
+    box-shadow: 20px 20px 20px rgb(0,0,0,0.6);
+}
+
+.about-me {
+    padding: 20px;
+}
+
+.next-parag {
+    padding-top: 120px;
+    padding-left: 50px;
+}
+
+.about-parag {
+    color: #d3314c;
+}
+
+.second-about {
+    padding-top: 20px;
+    font-size: 54px;
+    font-weight: bold;
+}
+
+.cv {
+    color: #ea1538;
+    padding: 20px;
+    background-color: rgb(26, 25, 25);
+    box-shadow: 20px 20px 20px rgb(23, 23, 24) ;
+}
+
+.sizing {
+    padding-top: 40px;
+}
+
+#service {
+    margin: 0 0px;
+    padding: 130px;
+    width: auto;
+    background-color: rgb(31, 31, 32);
+}
+
+.service-h1 {
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.service-div {
+    padding-top: 50px;
+}
+
+.service-box {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 50px;
+}
+
+.box {
+    background-color: rgb(26, 25, 25);
+    border-radius: 10px;
+    padding: 40px;
+}
+
+h2 {
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.service-parag {
+    padding-top: 30px;
+    font-size: 24px;
+}
