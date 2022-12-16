@@ -212,3 +212,73 @@ h2 {
     padding-top: 30px;
     font-size: 24px;
 }
+
+#contact {
+    margin: 0 0px;
+    padding: 130px;
+    width: auto;
+    background-color: rgb(31, 31, 32);
+}
+
+.align {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.contact-div {
+    display: flex;
+}
+
+.contact-left {
+    background-color: rgb(39, 38, 38);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.sec-icon {
+    padding: 20px;
+    background-color: rgb(31, 30, 30);
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.contact-parag {
+    padding-top: 10px;
+    font-size: 20px;
+    color: lightslategray;
+    
+}
+
+.contact-h3 {
+    padding-top: 14px;
+    font-size: 20px;
+    color: lightslategrey;
+}
+h4 {
+    padding-top: 24px;
+}
+.contact-head {
+    color: lightslategray;
+    font-size: 52px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.contact-right {
+    border-radius: 10px;
+    background-color: rgb(39, 38, 38);
+    padding: 30px;
+    margin-left: 50px;
+}
+
+.contact {
+    padding: 20px;
+}
+.name-phone {
+    display: flex;
+}
+
+form {
+    width: 650px;
+}
