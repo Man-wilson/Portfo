@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1569e8a6b4.js" crossorigin="anonymous"></script>
     <title>Document</title>
+    <script defer src="index.js"></script>
 </head>
 <body>
     <div class="main">
@@ -126,22 +127,26 @@
                 <div class="contact-right">
                     <form class="contact">
                         <div class="name-phone">
-                            <div style="padding-top: 10px;">
-                                YOUR NAME <br>
-                                <input type="text" name="userName" size="40px">
+                            <div>
+                               <p>YOUR NAME</p>
+                                <input class="input-type" type="text" name="username" size="40px" required>
                             </div>
-                            <div style="padding-top: 10px;">
-                                PHONE NUMBER <br>
-                                <input type="text" name="phone" size="40px">
+                            <div>
+                                PHONE NUMBER
+                                <input class="input-type" type="text" name="phone" size="40px" required>
                             </div>
                         </div>
-                        <p style="padding-top: 10px;">YOUR EMAIL</p>
-                        <input type="text" name="email" size="85">
-                        <p style="padding-top: 10px;">SUBJECT</p>
-                        <input type="text" name="subject" size="85">
-                        <p style="padding-top: 10px;">YOUR MESSAGE</p>
-                        <textarea name="message" id="" cols="83" rows="15"></textarea>
-                        <button type="button">SEND MESSAGE</button>
+                        <br>
+                        YOUR EMAIL <br>
+                        <input type="text" name="email" class="input-type" required>
+                        
+                        <p style="padding-top: 20px;">SUBJECT</p>
+                        <input type="text" name="subject" class="input-type">
+                        
+                        <p style="padding-top: 20px;">YOUR MESSAGE</p> 
+                        <textarea class="input-type" name="message" id="" cols="83" rows="8"></textarea >
+                       <p style="padding-top: 20px;"> </p>
+                        <button  type="submit">SEND MESSAGE</button>
                     </form>
                 </div>
             </div>
