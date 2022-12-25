@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/1569e8a6b4.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <script defer src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <div class="main">
@@ -16,13 +17,14 @@
                 <nav>
                     <img class="logo" src="/IMAGES/dark.jpg" alt="">
                     <p class="p-logo">MW</p>
-                    <ul class="nav-links">
-                        <li><a href="#hero">HOME</a></li>
-                        <li><a href="#second">ABOUT</a></li>
-                        <li><a href="#service">SERVICE</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
+                    <ul class="nav-links" id="nav">
+                        <li><a class="active" onclick="closeNavbar()"  href="#hero">HOME</a></li>
+                        <li><a class="active" onclick="closeNavbar()" href="#second">ABOUT</a></li>
+                        <li><a class="active" onclick="closeNavbar()" href="#service">SERVICE</a></li>
+                        <li><a class="active" onclick="closeNavbar()" href="#blog">BLOG</a></li>
+                        <li><a class="active" onclick="closeNavbar()" href="#contact">CONTACT</a></li>
                         <!-- <li></li> -->
-                    <button type="button">HIRE ME</button>  
+                    <button onclick="closeNavbar()" href="#contact" type="button">HIRE ME</button>  
                     </ul>
                     <label id="icon">
                         <i class="fa-solid fa-bars"></i>
@@ -86,7 +88,7 @@
                     <div class="box">
                         <i class="fa-solid fa-2x fa-book-open about-parag"></i>
                         <h2>App Development</h2>
-                        <p class="service-parag"> I throw myself down among the tall <br> grass by the stream as Ilie close to <br> the earth.</p>
+                        <p class="service-parag"> I throw myself down among the tall grass by the stream as Ilie close to <br> the earth.</p>
                     </div>
                     <div class="box">
                         <i class="fa-solid fa-2x fa-tv about-parag"></i>
@@ -96,14 +98,38 @@
                 </div>
             </div>
         </div>
+        <div id="blog" onload="getBlogs()">
+            <div class="input">
+              <form id="blogInput" class="form" onsubmit="handleSubmitBlog(event)">
+                <label>
+                  Title
+                </label>
+                <input id="title" type="text" />
+                <label>
+                  Image
+                  </label>
+                <input id="blogImage" type="text" />
+                <label>
+                  Body
+                </label>
+                <textarea id="description" name="body"></textarea>
+                <input id="btn" type="submit" />
+              </form>
+            </div>
+            <div class="output">
+              <p id="testResult"></p>
+              <div id="blogOutputs"></div>
+            </div>
+        </div>
+          
         <div id="contact">
             <div class="align">
-                <p style="padding-top: 80px; color: rgb(202, 57, 57);">CONTACT</p>
+                <p class="contact-1">CONTACT</p>
                 <h1 class="contact-head">Contact With Me</h1>
             </div>
             <div class="contact-div">
                 <div class="contact-left">
-                    <img src="./IMAGES/imgcontact.png" alt="hand" width="100%" height="200px" style="border-radius: 10px;">
+                    <img src="./IMAGES/imgcontact.png" alt="hand" class="img-size">
                     <h2>Nevine Acotanza</h2>
                     <h3 class="contact-h3">Chief Operating Officer</h3>
                     <p class="contact-parag">I am available for freelance work. Connect <br>
@@ -133,7 +159,7 @@
                             </div>
                             <div>
                                 PHONE NUMBER
-                                <input class="input-type" type="text" name="phone" size="40px" required>
+                                <input class="input-type" id="phone" type="text" name="phone" size="40px" required>
                             </div>
                         </div>
                         <br>
@@ -146,7 +172,7 @@
                         <p style="padding-top: 20px;">YOUR MESSAGE</p> 
                         <textarea class="input-type" name="message" id="" cols="83" rows="8"></textarea >
                        <p style="padding-top: 20px;"> </p>
-                        <button onclick="ValidateInputs(event)"  type="submit">SEND MESSAGE</button>
+                        <button class="special" onclick="ValidateInputs(event)"  type="submit">SEND MESSAGE</button>
                     </form>
                 </div>
             </div>

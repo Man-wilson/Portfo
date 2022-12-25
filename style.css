@@ -4,7 +4,7 @@ body {
     font-family: montserrat;
     color: aliceblue;
     text-align: left;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
 * {
@@ -49,6 +49,10 @@ nav {
 
 }
 
+.nav-hidden{
+    display: none;
+}
+
 .logo {
     object-fit: cover;
     border-radius: 50%;
@@ -57,7 +61,7 @@ nav {
 }
 
 .nav-links {
-    padding-left: 30%;
+    padding-left: 0;
 }
 
 nav ul li {
@@ -144,7 +148,7 @@ span {
 }
 
 .about {
-    padding: 120px;
+    padding: 130px;
     display: flex;
 }
 
@@ -187,7 +191,7 @@ span {
 }
 
 #service {
-    margin: 0 0px;
+    margin: 0;
     padding: 130px;
     width: auto;
     background-color: rgb(31, 31, 32);
@@ -205,13 +209,14 @@ span {
 .service-box {
     display: flex;
     /* justify-content: space-between; */
-    gap: 50px;
+    gap: 30px;
 }
 
 .box {
     background-color: rgb(26, 25, 25);
     border-radius: 10px;
     padding: 40px;
+    width: 100%;
 }
 
 h2 {
@@ -230,6 +235,10 @@ h2 {
     width: auto;
     background-color: rgb(31, 31, 32);
 }
+.contact-1 {
+    padding-top: 80px;
+    color: #ea1538;
+}
 
 .align {
     text-align: center;
@@ -244,6 +253,12 @@ h2 {
     background-color: rgb(39, 38, 38);
     border-radius: 10px;
     padding: 30px;
+}
+
+.img-size {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
 }
 
 .sec-icon {
@@ -314,11 +329,99 @@ form {
     padding-right: 350px;
 }
 
+
+
+#blog{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 130px;
+  }
+  
+  .input {
+    padding-top: 30px;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    background-color: #000000;
+  }
+  
+  .output {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    width: 50%;
+    height: 100%;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+  }
+  
+  label {
+    color: #fff;
+  }
+  #title {
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #2f3640;
+    border: none;
+    outline: none;
+
+  }
+  #blogImage {
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #2f3640;
+    border: none;
+    outline: none;
+
+  }
+  #description{
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #2f3640;
+    border: none;
+    outline: none;
+
+  }
+  #btn {
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    background-color:#ea1538;
+    border: none;
+    color: #fff;
+    margin-top: 10px;
+  }
+
+
+
 @media (max-width:1048px) {
+    html, body {
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
     img.logo {
         /* padding-left: 150px; */
         width: 100px;
         height: 100px;
+    }
+    nav {
+        padding-top: 10px;
     }
     p.p-logo {
         padding-right: 200px;
@@ -349,6 +452,189 @@ form {
        padding: 8px;
        margin: 5px;
     }
+   
+    #second {
+        padding-top: 60px;
+        margin: 0px;
+    }
+    div.about {
+        display: flex;
+        padding: 150px 0px;
+    }
+    img.image-about {
+        height: 60vh;
+        width: 50%;
+    }
+    div.next-parag{
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+    h1.second-about{
+        padding-top: 8px;
+        font-size: 40px;
+    }
+    p.sizing{
+        padding-top: 15px;
+        font-size: 18px;
+    }
+    button.cv{
+    padding: 10px;
+
+    }
+    #service {
+        padding: 160px 0px;
+    }
+    H1.service-h1 {
+        padding-top: 10px;
+    }
+    div.service-box {
+        display: flex;
+        /* justify-content: space-between; */
+        gap: 50px;
+    }
+    div.box {
+        padding: 40px
+    }
+    #contact {
+        margin: 0px;
+        padding: 30px 0px;
+        width: auto;
+        background-color: rgb(31, 31, 32);
+    }
+    p.contact-1{
+        display: none;
+    }
+    h1.contact-head{
+        padding-top: 100px;
+        font-size: 40px;
+    }
+    .contact-right {
+        
+        margin-left: 20px;
+    }
+    #blog {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding-top: 200px;
+        /* padding: 130px; */
+    }
+    
+
+      form {
+        display: flex;
+        flex-direction: column;
+        padding: 60px;
+      }
+      
+      label {
+        color: #fff;
+      }
+
+      
+      #title {
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        background-color: #2f3640;
+        border: none;
+        outline: none;
+    
+      }
+      #blogImage {
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        background-color: #2f3640;
+        border: none;
+        outline: none;
+    
+      }
+      #description{
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        background-color: #2f3640;
+        border: none;
+        outline: none;
+    
+      }
+      #btn {
+        padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+        background-color:#000000;
+        border: none;
+        color: #fff;
+        margin-top: 10px;
+      }
+    
+}
+
+@media  (max-width:945px) {
+    html, body {
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    p.p-logo {
+        display: none;
+    }
+    nav #icon {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #2f3640;
+        top: 130px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 40px 0;
+        line-height: 30px;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    a.active, a:hover {
+        border: none;
+        color: white;
+    }
+    nav ul.nav-links{
+        left: 0;
+    }
+    div.hero-section{
+        padding-top: 200px;
+        width: 100%;
+        height: 50vh;
+    }
+    div.hero-section{
+        margin: 0px;
+        padding-left: 10px;
+        }
+    h1.head {
+        font-size: 46px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    p.parag{
+        font-size: 20px;
+    }
+    div.icon {
+       padding: 18px;
+       margin: 5px;
+    }
+    p.second-head{
+        padding-top: 80px;
+    }
     p.second-head{
         padding-top: 80px;
     }
@@ -374,7 +660,7 @@ form {
     }
     p.sizing{
         padding-top: 15px;
-        font-size: 24px;
+        font-size: 18px;
     }
     button.cv{
     padding: 10px;
@@ -389,12 +675,248 @@ form {
     div.service-box {
         display: flex;
         /* justify-content: space-between; */
-        gap: 50px;
+        gap: 30px;
     }
     div.box {
-        padding: 40px
-    }
+    padding:20px;
+    width: 50%;
     
+    }
+    p.service-parag{
+        font-size: 19px;
+    }
+    #contact {
+        margin: 0px;
+        padding: 30px 0px;
+        width: auto;
+        background-color: rgb(31, 31, 32);
+    }
+    p.contact-1{
+        display: none;
+    }
+    h1.contact-head{
+        padding-top: 100px;
+        font-size: 40px;
+    }
+    .contact-right {
+        margin-left: 10px;
+    }
+    .contact-div {
+        display: block;
+    }
+    .img-size {
+        width: 100%;
+        height: 500px;
+        border-radius: 10px;
+    }
+    .contact-right {
+        padding: 30px;
+        margin: 20px;
+    }
+    form {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    div.name-phone{
+        display: block;
+    }
+    button.special {
+        width: 100%;
+    }
+    #blog {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 130px;
+    }
+    .input {
+        /* padding: 30px; */
+        width: 100%;
+        height: 50vh;
+           
+      }
+      
+      .output {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(155, 38, 38);
+        width: 100%;
+        height: 50vh;
+      }
+    
+}
+
+@media (max-width: 500px) {
+    html, body {
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    p.p-logo {
+        display: flex;
+        padding-left: 10px;
+    }
+    nav #icon {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #2f3640;
+        top: 112px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 40px 0;
+        line-height: 30px;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    a.active, a:hover {
+        border: none;
+        color: white;
+    }
+    nav ul.nav-links{
+        left: 0;
+    }
+
+    div.hero-section{
+        padding-top: 200px;
+        width: 100%;
+        height: 50vh;
+    }
+    div.hero-section{
+        margin: 0px;
+        padding-left: 10px;
+    }
+    h1.head {
+        font-size: 36px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    p.parag{
+        font-size: 24px;
+    }
+    div.icon {
+       padding: 25px;
+       margin: 5px;
+    }
+    p.second-head{
+        padding-top: 80px;
+    }
+    p.second-head{
+        padding-top: 80px;
+    }
+    #second {
+        padding-top: 60px;
+        margin: 0px;
+    }
+    div.about {
+        display: block;
+        padding: 100px 0px;
+    }
+    img.image-about {
+        height: 40vh;
+        width: 100%;
+    }
+    div.next-parag{
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+    h1.second-about{
+        padding-top: 8px;
+        font-size: 40px;
+    }
+    p.sizing{
+        padding: 10px;
+        font-size: 18px;
+    }
+    button.cv{
+    padding: 20px;
+
+    }
+
+    #service {
+        width: 100%;
+    }
+    p.about-parag {
+        text-align: center;
+    }
+    H1.service-h1 {
+        text-align: center;
+        padding-top: 10px;
+    }
+    div.service-box {
+        display: block;
+    }
+    div.box {
+        margin: 20px 10px;
+        border-radius: 10px;
+    padding-top:20px;
+    width: 100%;
+    
+    }
+    p.service-parag{
+        font-size: 19px;
+    }
+
+    #contact {
+        margin: 0px;
+        padding: 30px 0px;
+        width: auto;
+        background-color: rgb(31, 31, 32);
+    }
+    p.contact-1{
+        padding-top: 100px;
+        display: block;
+    }
+    h1.contact-head{
+        padding-top: 20px;
+        font-size: 40px;
+    }
+    .contact-div {
+        display: block;
+    }
+    .img-size {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .contact-right {
+        padding: 0px;
+        margin: 10px;
+    }
+    #blog {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 130px 0;
+    }
+    .input {
+        padding-top: 30px;
+        width: 100%;
+        height: 50vh;
+           
+      }
+      
+      .output {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(155, 38, 38);
+        width: 100%;
+        height: 50vh;
+      }
 }
 
 
