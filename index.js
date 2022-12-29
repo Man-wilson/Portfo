@@ -74,7 +74,9 @@ function closeNavbar(){
 const getBlogs = () => {
     // localStorage.removeItem("blogs");
     var result = localStorage.getItem("test");
-   
+     console.log('helloooo')
+
+  //  localStorage.removeItem("blogs")
     
 
     var fromStorage = localStorage.getItem("blogs");
@@ -125,7 +127,7 @@ const getBlogs = () => {
     }
   }
   
-  const editBlog = (blogId) => {
+  const deleteBlog = (blogId) => {
     console.log(blo)
     let array = JSON.parse(localStorage.getItem("blogs"));
     array.map((item)=>{
